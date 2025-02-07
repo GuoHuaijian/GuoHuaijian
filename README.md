@@ -12,6 +12,7 @@
 
 ## 📩 联系方式
 
+- **博客**: [guohuaijian.github.io](guohuaijian.github.io)
 - **邮箱**: guohuaijian9527@gmail.com
 - **微信**: wxid_564559079
 - **QQ**: 564559079
