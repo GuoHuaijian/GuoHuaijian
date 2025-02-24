@@ -8,6 +8,7 @@
 
 世间万般Bug，皆是心不静。若道友亦是如此，不妨共饮一杯 ☕ Java，论道于 [GitHub](https://github.com/GuoHuaijian)，修那“**代码无瑕，架构通明**”的大逍遥境界。
 
+![](https://raw.githubusercontent.com/GuoHuaijian/picture/main/data/20250224155242588.gif)
 ---
 
 ## 📩 联系方式
