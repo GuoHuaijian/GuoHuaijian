@@ -17,7 +17,7 @@
 
 - 💬 Enjoy discussing **Java internals, databases, middleware, and system design**
 
-- ✍️ I share technical notes and reflections on my [blog](https://guohuaijian.github.io)
+- ✍️ I share technical notes and reflections on my [blog](https://slothcoder.cn)
 
 
 ### What I work with
@@ -25,7 +25,7 @@
 | Category | Skills |
 |--------|--------|
 | **Languages** | ![](https://img.shields.io/badge/Java-E34F26?style=flat&logo=openjdk&logoColor=white) ![](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=000) |
-| **Backend** | ![](https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=spring&logoColor=white) ![](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=springboot&logoColor=white) ![](https://img.shields.io/badge/Spring_Cloud-6DB33F?style=flat&logo=spring&logoColor=white) ![](https://img.shields.io/badge/Kafka-000000?style=flat&logo=apachekafka&logoColor=white) ![](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat&logo=rabbitmq&logoColor=white) ![](https://img.shields.io/badge/Nacos-2C9AFF?style=flat&logo=alibabacloud&logoColor=white) |
+| **Backend** | ![](https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=spring&logoColor=white) ![](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=springboot&logoColor=white) ![](https://img.shields.io/badge/Spring_Cloud-6DB33F?style=flat&logo=spring&logoColor=white) ![](https://img.shields.io/badge/Kafka-000000?style=flat&logo=apachekafka&logoColor=white) ![](https://img.shields.io/badge/Nacos-2C9AFF?style=flat&logo=alibabacloud&logoColor=white) |
 | **Database** | ![](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white) ![](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white) |
 | **DevOps** | ![](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) ![](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white) |
 | **Tools** | ![](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) ![](https://img.shields.io/badge/Maven-C71A36?style=flat&logo=apachemaven&logoColor=white) ![](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=flat&logo=intellijidea&logoColor=white) |
