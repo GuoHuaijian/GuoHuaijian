@@ -33,10 +33,7 @@
 
 ### My GitHub activity
 
-<p align="center">
-<img align="left" width="47%" src="https://github-readme-stats.vercel.app/api?username=GuoHuaijian&show_icons=true&theme=rose_pine&hide_border=true&bg_color=ffffff00&text_color=3D3D3D" />
-<img align="right" width="47%" src="https://github-readme-streak-stats.herokuapp.com/?user=GuoHuaijian&theme=rose_pine&hide_border=true&background=ffffff00" />
-</p>
+[![](https://raw.githubusercontent.com/GuoHuaijian/GuoHuaijian/main/profile-summary-card-output/github_dark/0-profile-details.svg)](https://github.com/GuoHuaijian)
 
 <p align="center">
   <i>🌟 *Keep building. Keep learning.* 🌟 </i>
