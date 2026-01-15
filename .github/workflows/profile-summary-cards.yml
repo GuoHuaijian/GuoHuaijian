@@ -1,38 +1,56 @@
 name: GitHub Profile Summary Cards
 
 on:
+  workflow_dispatch:  # 先手动触发测试
   schedule:
     - cron: "0 0 * * *"
-  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    
     steps:
-      - uses: actions/checkout@v4
-
-      # 使用特定旧版本（可能包含多主题支持）
-      - name: Generate summary cards (light)
-        uses: vn7n24fzkq/github-profile-summary-cards@v0.6.2
+      # 1. 检出代码（包含所有文件）
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          USERNAME: GuoHuaijian
-          THEME: github
-          OUTPUT_DIR: profile-summary-card-output/github
-
-      - name: Generate summary cards (dark)
-        uses: vn7n24fzkq/github-profile-summary-cards@v0.6.2
-        with:
-          USERNAME: GuoHuaijian
-          THEME: github_dark
-          OUTPUT_DIR: profile-summary-card-output/github-dark
-          
-      - name: Commit & Push
+          fetch-depth: 0  # 检出所有历史
+      
+      # 2. 先创建必要的目录（防止路径错误）
+      - name: Create output directories
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          mkdir -p profile-summary-card-output
+          echo "Directories created"
+          ls -la
+      
+      # 3. 生成统计卡片（使用最新版本）
+      - name: Generate GitHub Summary Cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        with:
+          USERNAME: GuoHuaijian  # 你的用户名
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      # 4. 查看生成了什么
+      - name: Check generated files
+        run: |
+          echo "=== Generated files ==="
+          find . -name "*.svg" -type f 2>/dev/null || echo "No SVG files found"
+          echo "=== Directory structure ==="
+          ls -la
+          if [ -d "profile-summary-card-output" ]; then
+            echo "=== profile-summary-card-output contents ==="
+            ls -la profile-summary-card-output/
+          fi
+      
+      # 5. 提交更改
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Update summary cards" || echo "No changes to commit"
+          git status
+          git commit -m "📊 Update GitHub summary cards [$(date +%Y-%m-%d)]" || echo "No changes to commit"
           git push
